@@ -3,8 +3,8 @@
 
 void rush(int x, int y){
     int count = 1;
-    int width = 2;
-    int height = 2;
+    int width = 1;
+    int height = 1;
     
     if(x == 1 && y == 1){
         write(1,"A",1);
@@ -45,8 +45,8 @@ void rush(int x, int y){
                     }
                 }
             }   
-            width = 2;
-            height = 2;
+            width = 1;
+            height = 1;
             count++;
         }  
     }
