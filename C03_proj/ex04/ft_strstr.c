@@ -6,53 +6,34 @@ char *ft_strstr(char *str, char *to_find)
 {
     int i; //1st counter
     int f; //2nd counter
-    int w; //3rd counter inside;
-    int k; //to_find
-    int j; //for str
-    char *c;
-
+   
     i = 0;
-    k = 0;
 
     if(to_find[0] == '\0')
     {
-        return str;
+        return (str);
     }
-    while(to_find[i] != '\0')
-    {
-        i++;
-        k++;
-    }
-    i = 0;
     while(str[i] != '\0')
-    {   
-        i++;
-        j++;
-    }
-    i = 0;
-    
-    while(i < j)
-    {   
-        if(to_find[i] == str[i])
-        {   
-            
-            c = &str[j - i];
-    
+    {
+        f = 0;
+        while (str[i + f] == to_find[f])
+        {
+            if(to_find[f + 1] == '\0')
+            {
+                return (str + 1);
+            }
+            f++;
         }
         i++;
-         
     }
 
-    // c[i] = '\0';
-
-    return (c);
 
 }
 
 int main()
 {
     char t1[] = "Hello There World";
-    char t2[] = "gg";
+    char t2[] = "Hello";
     char *t3; // strstr ORIG
     char *t4; // ft_strstr
 
