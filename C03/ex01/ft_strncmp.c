@@ -32,12 +32,12 @@ int ft_strncmp(char *s1, char *s2, unsigned int n)
     
 }
 
-int main()
-{
-    char t1[] = "Raphael";
-    char t2[] ="Raphaelll";
-    int i = ft_strncmp(t1,t2,10);
-    int f = strncmp(t1,t2,10);
-    printf("ORIG: %d\n",f);
-    printf("MY VER: %d",i);
-}
+// int main()
+// {
+//     char t1[] = "Raphael";
+//     char t2[] ="Raphaelll";
+//     int i = ft_strncmp(t1,t2,10);
+//     int f = strncmp(t1,t2,10);
+//     printf("ORIG: %d\n",f);
+//     printf("MY VER: %d",i);
+// }
