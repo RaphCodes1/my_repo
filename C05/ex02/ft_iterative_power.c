@@ -20,6 +20,6 @@ int ft_iterative_power(int nb, int power)
 
 int main(void)
 {
-    int  c = ft_iterative_power(10,3);
+    int  c = ft_iterative_power(3,0);
     printf("%d",c);
 }

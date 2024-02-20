@@ -2,8 +2,6 @@
 
 int ft_recursive_factorial(int nb)
 {   
-    int result;
-
     
     if(nb == 0)
     {
