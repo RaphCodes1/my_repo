@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 18:44:25 by rcreer            #+#    #+#             */
-/*   Updated: 2024/02/21 13:14:22 by marvin           ###   ########.fr       */
+/*   Updated: 2024/02/21 13:20:31 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int ft_sqrt(int nb)
 		
 		if(s == nb)
 		{
-			return (s);
+			return (i);
 		}
 		
 	}
@@ -55,6 +55,6 @@ int ft_sqrt(int nb)
 
 int	main(void)
 {
-	int c = ft_sqrt(4);
+	int c = ft_sqrt(16);
 	printf("%d", c);
 }
