@@ -2,10 +2,13 @@
 
 int ft_recursive_factorial(int nb)
 {   
-    
-    if(nb == 0)
+    if(nb < 0)
     {
-        return 1;
+        return (0);
+    }
+    else if(nb == 0)
+    {
+        return (1);
     }
     else
     {
@@ -13,8 +16,8 @@ int ft_recursive_factorial(int nb)
     }
 }
 
-int main(void)
-{
-    int c = ft_recursive_factorial(-1);
-    printf("%d",c);
-}
+// int main(void)
+// {
+//     int c = ft_recursive_factorial(-1);
+//     printf("%d",c);
+// }
